@@ -1,5 +1,5 @@
 name: Stop W3 Services on Windows Server
-  hosts: windows
+  hosts: all
   tasks:
     - name: Stop W3SVC service
       win_service:
