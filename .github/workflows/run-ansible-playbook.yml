@@ -31,4 +31,4 @@ jobs:
           ANSIBLE_USER: ${{ secrets.ANSIBLE_USER }}
           ANSIBLE_PASSWORD: ${{ secrets.ANSIBLE_PASSWORD }}
         run: |
-          ansible-playbook -i .github/workflows/hosts/hosts.ini .github/workflows/playbooks/stop_w3_service.yml
+          ansible-playbook -i ./hosts/hosts.ini ./playbooks/stop_w3_service.yml
