@@ -1,0 +1,9 @@
+---
+- name: Reboot Server Playbook
+  hosts: windows
+  become: yes
+  tasks:
+    - name: Reboot the server
+      reboot:
+        reboot_timeout: 600 
+        test_command: whoami
