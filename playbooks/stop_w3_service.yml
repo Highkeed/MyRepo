@@ -1,5 +1,6 @@
 - name: Stop W3 Services on Windows Server
   hosts: windows
+  gather_facts: no
   tasks:
     - name: Stop service
       win_service:
