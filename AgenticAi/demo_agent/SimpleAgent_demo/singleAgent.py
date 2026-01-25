@@ -7,7 +7,7 @@ from crewai.tools import tool
 
 from dotenv import load_dotenv
 
-load_dotenv("c:/codellm/.env", override=True)
+load_dotenv(".env", override=True)
 
 gemini_llm = LLM(
     model="gemini/gemini-2.5-flash-lite",
@@ -47,3 +47,4 @@ crew = Crew(
 
 result = crew.kickoff()
 print(f"\n\n########################\n## AGENT OUTPUT:\n########################\n{result}")
+
