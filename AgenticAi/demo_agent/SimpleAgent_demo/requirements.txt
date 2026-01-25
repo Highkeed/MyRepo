@@ -1,0 +1,2 @@
+crewai[google-genai]
+python-dotenv
