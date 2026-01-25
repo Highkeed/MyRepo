@@ -1,0 +1,12 @@
+embedchain==0.1.128
+langchain==0.3.27
+langchain-community==0.3.31
+langchain-core==0.3.80
+langchain-text-splitters==0.3.11
+crewai==0.95.0
+crewai-tools==0.33.0
+google-genai==1.21.1
+protobuf==5.29.5
+yfinance==0.2.63
+python-dotenv
+setuptools
