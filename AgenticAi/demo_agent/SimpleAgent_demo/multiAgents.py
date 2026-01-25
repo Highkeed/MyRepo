@@ -4,7 +4,7 @@ from crewai import Agent, Task, Crew, Process, LLM
 from crewai.tools import tool
 
 from dotenv import load_dotenv
-load_dotenv('c:/codellm/.env')
+load_dotenv('.env')
 
 # 1. Configure the Gemini 2.5 Flash Lite LLM
 gemini_llm = LLM(
@@ -62,3 +62,4 @@ my_crew = Crew(
 
 result = my_crew.kickoff()
 print(f"\n\nFINAL OUTPUT:\n{result}")
+
