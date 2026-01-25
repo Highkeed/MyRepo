@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 import re
 
 # Load environment variables
-load_dotenv('c:/codellm/.env')
+load_dotenv('.env')
 # Configure Google AI API 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=GOOGLE_API_KEY)
@@ -79,3 +79,4 @@ print("######################## Analysis #########################\n", analysis)
 # Extract and display the suitability score
 suitability_score = extract_suitability_score(analysis)
 print("######################## Suitablity Score #########################\n", suitability_score)
+
