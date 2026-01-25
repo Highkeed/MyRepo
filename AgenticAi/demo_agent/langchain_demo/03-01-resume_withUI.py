@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 import re
 
 # Load environment variables
-load_dotenv('c:/codellm/.env')
+load_dotenv('.env')
 # Configure Google AI API 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 if not GOOGLE_API_KEY:
@@ -129,4 +129,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
